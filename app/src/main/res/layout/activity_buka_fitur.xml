@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/TxtJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Buka Fitur"
+        android:textColor="@color/white"
+        android:textSize="12pt" />
+
+    <customfont.MyEditText
+        android:layout_centerVertical="true"
+        android:backgroundTint="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EdKodeGuru"
+        android:layout_below="@id/TxtJudul"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Kode Tim Disiplin"
+        />
+
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/EdKodeGuru"
+        android:id="@+id/btnVerif"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/btnborder"
+        android:text="Buka" />
+
+</LinearLayout>

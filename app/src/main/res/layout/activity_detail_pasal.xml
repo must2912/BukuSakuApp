@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <customfont.MyTextViewMedium
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/kode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X12"
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+
+        <customfont.MyTextViewMedium
+            android:layout_below="@id/kode"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterlambatan"
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+
+        <customfont.MyTextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/keterangan"
+            android:layout_below="@id/kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d scrambled it to make a type specimen book." />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTambahKeranjang"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <customfont.MyTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="3"
+            android:text="Poin"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <customfont.MyTextViewMedium
+            android:id="@+id/poin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="5"
+            android:textColor="@color/colorText"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <customfont.MyTextViewMedium
+        android:id="@+id/btnTambahKeranjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Tambah Poin"
+        android:textColor="@color/colorText"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

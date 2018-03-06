@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF3336">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <customfont.MyEditText
+        android:id="@+id/EdNis"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="NIS"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:inputType="number"
+        android:layout_below="@id/TxtJudul"
+        />
+
+
+    <customfont.MyEditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EdPassword"
+        android:layout_below="@id/EdNis"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:background="@drawable/btnborder"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnMasuk"
+        android:layout_below="@id/EdPassword"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Masuk"/>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroundbaru">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <customfont.MyTextViewBold
+                android:textColor="#fff"
+                android:textSize="12pt"
+                android:id="@+id/tvNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ammar Musthofa F"/>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <customfont.MyTextView
+                    android:textColor="#fff"
+                    android:textSize="8pt"
+                    android:id="@+id/tvKelas"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XII RPL 1"/>
+
+                <customfont.MyTextView
+                    android:textColor="#fff"
+                    android:textSize="8pt"
+                    android:id="@+id/tvNis"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3103115226"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/header"
+            android:id="@+id/tengah"
+            android:weightSum="2"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/BtnPelanggaran"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@drawable/btnborder"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <customfont.MyTextView
+                    android:id="@+id/tvPoinPelanggaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18pt"
+                    android:text=""/>
+
+                <customfont.MyTextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poin Pelanggaran"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BtnPenghargaan"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@drawable/btnborder"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <customfont.MyTextView
+                    android:textSize="18pt"
+                    android:id="@+id/tvPoinPenghargaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <customfont.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poin Penghargaan"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <customfont.MyTextViewMedium
+                android:gravity="center"
+                android:text="Tambah Poin"
+                android:background="@drawable/btnborder"
+                android:id="@+id/btnTambah"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tengah"/>
+
+            <FrameLayout
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/btnTambah"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btnborder">
+
+                <customfont.MyTextViewMedium
+                    android:textSize="16sp"
+                    android:paddingLeft="15dp"
+                    android:id="@+id/txtDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Poin"/>
+
+            </FrameLayout>
+
+    </RelativeLayout>
+</ScrollView>

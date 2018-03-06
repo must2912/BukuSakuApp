@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Activity.Home.Fragment.NotifFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                    <customfont.MyTextView
+                        android:id="@+id/tvTimdis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Nomor"
+                        android:textSize="15sp"/>
+
+
+                <customfont.MyTextViewMedium
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tvAksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor"
+                    android:textSize="15sp"/>
+
+                <customfont.MyTextViewMedium
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/tvPoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <customfont.MyTextView
+                android:layout_margin="5dp"
+                android:layout_gravity="start"
+                android:id="@+id/tvTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nomor"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+</LinearLayout>

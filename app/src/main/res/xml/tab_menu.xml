@@ -1,0 +1,18 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/homeku"
+        title="Home"/>
+    <tab
+        id="@+id/tab_peraturan"
+        icon="@drawable/list"
+        title="Peraturan"/>
+    <tab
+        id="@+id/tab_lapor"
+        icon="@drawable/repot"
+        title="Lapor" />
+    <tab
+        id="@+id/tab_notif"
+        icon="@drawable/notification"
+        title="Notifikasi" />
+</tabs>
